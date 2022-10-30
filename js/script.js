@@ -28,6 +28,6 @@ function calculateAREA() {
   const area = ((length + width) / 2) * height
 
   //output
-document.getElementById("area").innerHTML = "The Area Of The Trapezoid is: " + area.toFixed(2) + "cm²"
-
+  document.getElementById("area").innerHTML =
+    "The Area Of The Trapezoid is: " + area.toFixed(2) + "cm²"
 }
