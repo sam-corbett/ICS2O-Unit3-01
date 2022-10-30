@@ -19,5 +19,15 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function calculateAREA() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  //input
+  const length = parseInt(document.getElementById("length-of-trapezoid").value)
+  const width = parseInt(document.getElementById("width-of-trapezoid").value)
+  const height = parseInt(document.getElementById("height-of-trapezoid").value)
+
+  //process
+  const area = ((length + width) / 2) * height
+
+  //output
+document.getElementById("area").innerHTML = "The Area Of The Trapezoid is: " + area.toFixed(2) + "cm²"
+
 }
